@@ -1,6 +1,13 @@
+import React, { useState } from "react";
 import Head from "next/head";
 
 export default function Home() {
+  const [surveyCompletedState, setSurveyCompletedState] = useState(false);
+
+  const surveyCompleted = () => {
+    setSurveyCompletedState(true);
+  };
+
   const SurveyDisplay = () => {
     return (
       <div className='survey-content'>
@@ -28,7 +35,7 @@ export default function Home() {
             <p className='btn-text'>5</p>
           </div>
         </div>
-        <div className='submit-btn-container'>
+        <div className='submit-btn-container' onClick={surveyCompleted}>
           <button className='submit-btn'>S U B M I T</button>
         </div>
       </div>
@@ -66,9 +73,7 @@ export default function Home() {
         <title>Frontend Mentor | Interactive rating component</title>
       </Head>
       <main>
-        <div className='survey-container'>
-          <ThankYouDisplay />
-        </div>
+        <div className='survey-container'>{!surveyCompletedState ? <SurveyDisplay /> : <ThankYouDisplay />}</div>
       </main>
     </>
   );
