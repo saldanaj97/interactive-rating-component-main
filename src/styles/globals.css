@@ -17,6 +17,7 @@ p {
   font-weight: 400;
 }
 
+/* Survey box */
 .survey-container {
   display: flex;
   background-color: hsl(213, 19%, 18%);
@@ -48,7 +49,7 @@ p {
 
 .rating-btn {
   border-radius: 50%;
-  background-color: hsla(216, 12%, 54%, 0.3);
+  background-color: hsla(216, 12%, 54%, 0.1);
   width: 45px;
   height: 45px;
   text-align: center;
@@ -63,7 +64,7 @@ p {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background-color: hsla(216, 12%, 54%, 0.3);
+  background-color: hsla(216, 12%, 54%, 0.1);
   width: 45px;
   height: 45px;
 }
@@ -81,10 +82,48 @@ p {
   padding: 5px;
 }
 
+.submit-btn-container:hover {
+  background-color: white;
+}
+
 .submit-btn {
   background-color: transparent;
   border: none;
   color: white;
+  text-transform: uppercase;
+}
+
+.submit-btn-container:hover {
+  color: hsl(25, 97%, 53%);
+}
+
+/* Thank you box */
+.thank-you-container {
+  text-align: center;
+}
+
+.user-survey-selection-container {
+  border-radius: 15px;
+  background-color: hsla(216, 12%, 54%, 0.1);
+  margin: 20px auto;
+  padding: 5px 10px;
+  width: fit-content;
+}
+
+.survey-selection-text {
+  color: hsl(25, 97%, 53%);
+  margin: 0px 15px;
+}
+
+.thank-you-heading {
+  color: white;
+  font-weight: 400;
+}
+
+.thank-you-description {
+  color: hsl(217, 12%, 63%);
+  font-weight: 400;
+  margin: 20px;
 }
 
 @media (min-width: 1440px) {
