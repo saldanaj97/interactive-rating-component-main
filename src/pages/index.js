@@ -62,7 +62,7 @@ export default function Home() {
           <h1>Thank you!</h1>
         </div>
         <div className='thank-you-description'>
-          <p> We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+          <p> We appreciate you taking the time to give a rating. If you ever need more support, don&apos;t hesitate to get in touch!</p>
         </div>
       </div>
     );
